@@ -7,6 +7,7 @@ function App() {
 
   return (
    <>
+   <h1>context API</h1>
    </>
   )
 }
