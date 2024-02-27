@@ -2,13 +2,19 @@ import { useState } from 'react'
 
 import './App.css'
 
+import UserContextProvider from './context/UserContextProvider'
+import Input from './components/Input.jsx'
+import Profile from './components/Profile.jsx'
+
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-   <>
-   <h1>context API</h1>
-   </>
+    <UserContextProvider>
+    <h1>Use context API</h1>
+    <Input />
+    <Profile />
+  </UserContextProvider>
   )
 }
 
